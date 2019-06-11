@@ -1,3 +1,8 @@
-// TODO: write code here
+let hero {
+  name: 'Маг' , health: 90
+  };
 
-console.log('app.js bundled');
+const defineColorHealth = (arr) => {
+    let healtMarker = arr.health;
+    if (healtMarker > 50) return ${healthy}
+}
