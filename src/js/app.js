@@ -1,8 +1,20 @@
-let hero {
-  name: 'Маг' , health: 90
+let hero = {
+  name: 'Маг' , 
+  health: 90 
   };
 
-const defineColorHealth = (arr) => {
-    let healtMarker = arr.health;
-    if (healtMarker > 50) return ${healthy}
+const defineColorHealth = (person) => {
+    let healtMarker;
+    if (person.health > 50) { 
+      healtMarker = 'healthy';
+    } else if (person.health < 50)  { 
+      healtMarker = 'critical';
+    } else { 
+      healtMarker = 'critical';
+    }
+    return ${person.name}${healtMarker};
 }
+
+let colorHero = defineColorHealth(hero);
+console.log(colorHero);
+

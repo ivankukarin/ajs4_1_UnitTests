@@ -1,0 +1,1 @@
+import {hero, defineColorHealth, colorHero} from './src/js/app.js' 
