@@ -7,13 +7,15 @@ const defineColorHealth = (person) => {
   let healtMarker;
   if (person.health > 50) {
     healtMarker = 'healthy';
-  } else if (person.health < 50)  { 
+  } else if (person.health < 15) {
     healtMarker = 'critical';
   } else {
-    healtMarker = 'critical';
+    healtMarker = 'wounded';
   }
   return `${person.name} ${healtMarker}`;
 };
+
+defineColorHealth(hero);
 
 const colorHero = defineColorHealth(hero);
 
